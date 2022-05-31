@@ -131,7 +131,16 @@
 		// - hero-footer
 		&-footer {
 			flex-wrap: wrap;
+			&-content {
+				flex: 1 1 $wrapper-content-length;
 
+				// @include rect-parent(0, 4rem, 2rem, $rect-height, 5rem);
+
+				// // - hero-footer-content-bg-rectangle
+				// &-bg-rectangle {
+				// 	@include rect(unset, 0, unset, 10rem);
+				// }
+			}
 			// - - hero-footer-content
 			// - - - hero-footer-item
 			&-item {

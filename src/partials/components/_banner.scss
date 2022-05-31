@@ -13,16 +13,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-end;
-		@include border(red);
 	}
 	&-spacer {
-		content: "";
-		background: #000;
-		height: 1rem;
-		width: 1rem;
 	}
 	&-content {
-		flex-wrap: wrap;
 		@include rect-parent(6rem, 0, 2rem, $rect-height, 10rem);
 
 		&-bg-rectangle {
@@ -38,6 +32,8 @@
 			gap: 1rem;
 
 			&-title {
+				text-transform: uppercase;
+				line-height: 1.2em;
 				font-size: 3rem;
 			}
 			&-copy {
@@ -45,6 +41,48 @@
 		}
 		&-btn {
 			// flex: 1;
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+	.banner {
+		// overflow: hidden;
+
+		height: 60vh;
+		& > .container {
+			height: 100%;
+		}
+		&-content {
+			flex-direction: column;
+
+			@include rect-parent(0, 4rem, 2rem, $rect-height, 5rem);
+
+			// - hero-footer-content-bg-rectangle
+			&-bg-rectangle {
+				@include rect(unset, 0, unset, 10rem);
+			}
+
+			// @include rect-parent(4rem, 0, 2rem, 10rem, 5rem);
+			// gap: 2rem;
+
+			// &-bg-rectangle {
+			// 	@include rect(0, unset, 5rem, unset);
+			// }
+
+			&-text {
+				max-width: 100%;
+				flex: 1;
+
+				&-title {
+					font-size: 2rem;
+				}
+				&-copy {
+				}
+			}
+			&-btn {
+				// flex: 1;
+			}
 		}
 	}
 }

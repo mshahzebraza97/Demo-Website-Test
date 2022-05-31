@@ -22,7 +22,6 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 3rem;
-		flex-wrap: wrap;
 	}
 
 	&-article {
@@ -38,6 +37,15 @@
 		&-name {
 		}
 		&-price {
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+	.new-arrivals {
+		&-content {
+			flex-direction: column;
+			gap: 3rem;
 		}
 	}
 }

@@ -3,7 +3,7 @@
 	&s {
 		// display: flex;
 		& > .container {
-			// display: flex;
+			display: flex;
 		}
 	}
 	&-list {
@@ -24,5 +24,30 @@
 	&-media {
 	}
 	&-image {
+	}
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+	.client {
+		&-list {
+			flex-direction: column;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			gap: 4rem;
+		}
+		&-item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			height: 15rem;
+			flex: 1;
+		}
+		&-media {
+		}
+		&-image {
+		}
 	}
 }
