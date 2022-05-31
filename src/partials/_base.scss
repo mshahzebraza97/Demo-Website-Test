@@ -1,0 +1,185 @@
+//  contains all the resets, colors, variables, mixins, and utility classes
+
+// variables
+
+// colors
+$color-dark-10: #0000001a; // remove later
+$color-secondary: #fff; // remove later
+$color-tertiary: #000; // remove later
+$primary-blue: #257ced; // remove later
+$primary-white: #fff; // remove later
+
+$pastel-red: #ffb3b3; // remove later
+$pastel-yellow: #fff8c6; // remove later
+$pastel-green: #d1f2d1; // remove later
+$pastel-blue: #b3d1ff; // remove later
+$pastel-purple: #d1d1f2; // remove later
+$pastel-orange: #ffd1b3; // remove later
+$pastel-pink: #ffb3d1; // remove later
+$pastel-brown: #d1b3b3; // remove later
+
+// end colors
+
+// sizes
+
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+
+// Rectangle
+$window: 100vw;
+$main-content-width: 120rem;
+$margin-one-side: calc((#{$window} - #{$main-content-width}) / 2);
+$wrapper-content-length: 100rem;
+$wrapper-nav-length: calc(#{$main-content-width} - #{$wrapper-content-length});
+$wrapper-bg-length: calc(#{$wrapper-content-length} + #{$margin-one-side});
+$rect-height: 17.5rem;
+// Rectangle End
+
+$font-size-base: 10px;
+$column-gutter: 5rem;
+$column-width: calc($length-base * 12 + $column-gutter * 11);
+$page-margin: 30px;
+$section-gap: 12rem;
+$bg-wrapper-height: 200px;
+$banner-height: 200px;
+$footer-banner-height: 200px;
+
+// reset styles
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #000; // remove later
+	transition: 0.2s ease all;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #000;
+	background: #fff;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none; // remove later
+		color: #000; // remove later
+	}
+
+	&:active,
+	&:visited {
+		color: #000; // remove later
+		text-decoration: none; // remove later
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+button {
+	cursor: pointer;
+	background: none; // remove later
+	border: unset;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.btn {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 1rem 2rem;
+}
+.btn-ghost {
+	background: none;
+	border: 2px solid $color-dark-10;
+	border-radius: 14rem;
+}
+// end reset styles
+
+// Mixins
+
+@mixin btn-left-circle {
+	position: relative;
+	z-index: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-left: 2rem;
+	&::before {
+		@media only screen and (max-width: $breakpoint-mobile) {
+			width: 3rem;
+			height: 3rem;
+		}
+		content: "";
+		position: absolute;
+		top: 48%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		background: $primary-blue;
+		z-index: -1;
+	}
+}
+@mixin col {
+	flex: 1;
+}
+
+@mixin border($border-color) {
+	border: 1px dashed $border-color;
+}
+
+@mixin rect-parent($leftPad, $rightPad, $verticalPad, $footer-height, $gap) {
+	// styles for rectangle
+
+	display: flex;
+	gap: $gap;
+	height: $footer-height;
+	align-items: center;
+
+	position: relative;
+	z-index: 1;
+	padding-top: $verticalPad;
+	padding-bottom: $verticalPad;
+	padding-left: $leftPad;
+	padding-right: $rightPad;
+	// styles for rectangle end
+}
+
+@mixin rect($leftSpace, $rightSpace, $topLeftRadius, $topRightRadius) {
+	z-index: -1;
+	content: "";
+	height: 100%;
+	width: calc(#{100%} + #{$margin-one-side});
+
+	position: absolute;
+	bottom: 0;
+
+	left: $leftSpace;
+	border-top-left-radius: $topLeftRadius;
+	right: $rightSpace;
+	border-top-right-radius: $topRightRadius;
+
+	@media screen and (max-width: #{$breakpoint-mobile}) {
+		width: 100rem;
+	}
+
+	background: $primary-white;
+}
+
+// Mixins End

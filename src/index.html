@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- style import -->
+		<link rel="stylesheet" href="index.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+			integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+			crossorigin="anonymous"
+		/>
+		<title>DemoWeb</title>
+	</head>
+	<body>
+		<nav class="main-nav">
+			<!-- Navigation -->
+			<div class="container">
+				<!-- Could have been a brand here -->
+				<div class="main-nav-brand"></div>
+				<ul class="mobile-nav-list">
+					<li class="mobile-nav-item">
+						<!-- fas cart icon -->
+						<a class="mobile-nav-link" href="#">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</li>
+					<li class="mobile-nav-item">
+						<!-- fas cart icon -->
+						<a class="mobile-nav-link" href="#">
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="main-nav-list">
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="#">Home</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="#">Pages</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="#">Shop</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="#">Blog</a>
+					</li>
+					<li class="main-nav-item">
+						<a class="main-nav-link" href="#">Contact US</a>
+					</li>
+					<!-- Dropdown list -->
+					<li class="main-nav-item main-nav-dropdown">
+						<!-- This link will cover the space -->
+						<a href="#" class="main-nav-link main-nav-dropdown-btn">Dropdown</a>
+						<div class="main-nav-dropdown-content">
+							<a class="main-nav-dropdown-link" href="#">English</a>
+							<a class="main-nav-dropdown-link" href="#">French</a>
+							<a class="main-nav-dropdown-link" href="#">German</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Navigation End -->
+
+		<!-- Header -->
+		<header class="hero">
+			<!-- Container -->
+			<div class="container">
+				<!-- Capitalize all -->
+				<div class="hero-content">
+					<div class="hero-title">
+						<h4 class="hero-title-sub">Sale</h4>
+						<h1 class="hero-title-main">Stocktake sale upto 75% off</h1>
+					</div>
+					<a href="#" class="hero-btn">
+						<span class="hero-btn-text">Shop Now</span>
+						<span class="hero-btn-icon">
+							<!-- A Blue Circle to be placed at the start -->
+							<i class="fas fa-arrow-right"></i>
+						</span>
+					</a>
+				</div>
+
+				<!-- Hero Footer -->
+				<!-- The wrapper must be positioned w.r.t to header -->
+				<div class="hero-footer">
+					<!-- Hero Footer Content -->
+					<div class="hero-footer-content">
+						<div class="hero-footer-content-bg-rectangle">
+							<!-- Only to be used for the white colored container put behind the features -->
+						</div>
+						<div class="hero-footer-item">
+							<h4 class="hero-footer-item-title">Free Shipping</h4>
+							<p class="hero-footer-item-text">
+								Free Shipping for orders above $100
+							</p>
+						</div>
+						<div class="hero-footer-item">
+							<h4 class="hero-footer-item-title">Free Shipping</h4>
+							<p class="hero-footer-item-text">
+								Free Shipping for orders above $100
+							</p>
+						</div>
+						<div class="hero-footer-item">
+							<h4 class="hero-footer-item-title">Free Shipping</h4>
+							<p class="hero-footer-item-text">
+								Free Shipping for orders above $100
+							</p>
+						</div>
+					</div>
+					<!-- Hero Footer Content End -->
+					<!-- Hero Footer Nav -->
+					<div class="hero-footer-nav">
+						<!-- A collection of two circle-shaped buttons -->
+						<button class="hero-footer-nav-item">
+							<img src="../Assets/Icons/left-arrow.png" alt="left-arrow" />
+						</button>
+						<button class="hero-footer-nav-item">
+							<img src="../Assets/Icons/right-arrow.png" alt="right-arrow" />
+						</button>
+					</div>
+					<!-- Hero Footer Nav End -->
+				</div>
+				<!-- Hero Footer End -->
+			</div>
+			<!-- Container End -->
+		</header>
+		<!-- Header End -->
+
+		<!-- Main -->
+
+		<main class="main">
+			<!-- Main Content -->
+			<!-- Featured -->
+			<section class="featured">
+				<div class="container">
+					<article class="feat-post">
+						<div class="feat-spacer"></div>
+						<div class="feat-content">
+							<h3 class="feat-title">Men's Casual Fashion Style</h3>
+							<a href="#" class="feat-btn">View All</a>
+						</div>
+					</article>
+					<article class="feat-post">
+						<div class="feat-spacer"></div>
+						<div class="feat-content">
+							<h3 class="feat-title">Women's Casual Fashion Style</h3>
+							<a href="#" class="feat-btn">View All</a>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- Featured End-->
+
+			<!-- Suggested -->
+			<section class="suggested">
+				<div class="container">
+					<div class="suggested-header">
+						<h2 class="suggested-title">Selected Just for you!</h2>
+						<a href="#" class="btn btn-ghost suggested-btn">Show More</a>
+					</div>
+					<div class="suggested-content">
+						<figure class="suggested-article">
+							<div class="suggested-article-media">
+								<img
+									class="suggested-article-image"
+									src="../Assets/Images/product-1.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="suggested-article-info">
+								<h3 class="suggested-article-name">Backpack</h3>
+								<h3 class="suggested-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="suggested-article">
+							<div class="suggested-article-media">
+								<img
+									class="suggested-article-image"
+									src="../Assets/Images/product-2.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="suggested-article-info">
+								<h3 class="suggested-article-name">Backpack</h3>
+								<h3 class="suggested-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="suggested-article">
+							<div class="suggested-article-media">
+								<img
+									class="suggested-article-image"
+									src="../Assets/Images/product-3.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="suggested-article-info">
+								<h3 class="suggested-article-name">Backpack</h3>
+								<h3 class="suggested-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="suggested-article">
+							<div class="suggested-article-media">
+								<img
+									class="suggested-article-image"
+									src="../Assets/Images/product-4.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="suggested-article-info">
+								<h3 class="suggested-article-name">Backpack</h3>
+								<h3 class="suggested-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!-- Suggested End -->
+
+			<!-- Services -->
+			<section class="services">
+				<div class="container">
+					<div class="services-header">
+						<h2 class="services-title">Why should you choose use</h2>
+					</div>
+					<div class="services-content">
+						<figure class="services-article">
+							<div class="services-article-media">
+								<img
+									class="services-article-image"
+									src="../Assets/Icons/truck.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="services-article-info">
+								<h3 class="services-article-name">Backpack</h3>
+								<h3 class="services-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="services-article">
+							<div class="services-article-media">
+								<img
+									class="services-article-image"
+									src="../Assets/Icons/pay.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="services-article-info">
+								<h3 class="services-article-name">Backpack</h3>
+								<h3 class="services-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="services-article">
+							<div class="services-article-media">
+								<img
+									class="services-article-image"
+									src="../Assets/Icons/shield.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="services-article-info">
+								<h3 class="services-article-name">Backpack</h3>
+								<h3 class="services-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="services-article">
+							<div class="services-article-media">
+								<img
+									class="services-article-image"
+									src="../Assets/Icons/quality.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="services-article-info">
+								<h3 class="services-article-name">Backpack</h3>
+								<h3 class="services-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!-- Services End -->
+
+			<!-- New Arrivals  -->
+			<section class="new-arrivals">
+				<div class="container">
+					<div class="new-arrivals-header">
+						<h2 class="new-arrivals-title">Selected Just for you!</h2>
+						<a href="#" class="btn btn-ghost new-arrivals-btn">Show More</a>
+					</div>
+					<div class="new-arrivals-content">
+						<figure class="new-arrivals-article">
+							<div class="new-arrivals-article-media">
+								<img
+									class="new-arrivals-article-image"
+									src="../Assets/Images/new-product-1.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="new-arrivals-article-info">
+								<h3 class="new-arrivals-article-name">Backpack</h3>
+								<h3 class="new-arrivals-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="new-arrivals-article">
+							<div class="new-arrivals-article-media">
+								<img
+									class="new-arrivals-article-image"
+									src="../Assets/Images/new-product-2.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="new-arrivals-article-info">
+								<h3 class="new-arrivals-article-name">Backpack</h3>
+								<h3 class="new-arrivals-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="new-arrivals-article">
+							<div class="new-arrivals-article-media">
+								<img
+									class="new-arrivals-article-image"
+									src="../Assets/Images/new-product-3.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="new-arrivals-article-info">
+								<h3 class="new-arrivals-article-name">Backpack</h3>
+								<h3 class="new-arrivals-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+						<figure class="new-arrivals-article">
+							<div class="new-arrivals-article-media">
+								<img
+									class="new-arrivals-article-image"
+									src="../Assets/Images/new-product-4.png"
+									width="auto"
+									height="auto"
+									alt="figure alt text"
+								/>
+							</div>
+							<figcaption class="new-arrivals-article-info">
+								<h3 class="new-arrivals-article-name">Backpack</h3>
+								<h3 class="new-arrivals-article-price">$285.00</h3>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<!-- New Arrivals End -->
+
+			<!-- Banner  -->
+			<section class="banner">
+				<div class="container">
+					<div class="banner-spacer"></div>
+					<div class="banner-content">
+						<div class="banner-content-bg-rectangle"></div>
+						<div class="banner-content-text">
+							<h3 class="banner-content-text-title">New Collection</h3>
+							<p class="banner-content-text-copy">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+								ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+						<button class="banner-content-btn">Shop Now</button>
+					</div>
+				</div>
+			</section>
+			<!-- Banner End -->
+
+			<section class="clients">
+				<div class="container">
+					<ul class="client-list">
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo1.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo2.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo3.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo4.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo5.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+						<li class="client-item">
+							<figure class="client-media">
+								<img
+									class="client-image"
+									src="../Assets/Logos/logo6.png"
+									width="auto"
+									height="auto"
+									alt="Blackstyle"
+								/>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<!-- Main End -->
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<!-- Footer Content -->
+				<div class="footer-content">
+					<!-- Block 1 -->
+					<div class="footer-block">
+						<h4 class="footer-block-title">About</h4>
+						<div class="footer-block-content">
+							<!-- Block Text -->
+							<p class="footer-block-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl
+								aliquam nunc, eget egestas nunc urna eu tincidunt consectetur,
+							</p>
+							<!-- Block Text End -->
+							<!-- Block Social -->
+							<div class="footer-block-social">
+								<a href="#" class="footer-block-social-item">
+									<i class="fab fa-lg fa-facebook-f"></i>
+								</a>
+								<a href="#" class="footer-block-social-item">
+									<i class="fab fa-lg fa-twitter"></i>
+								</a>
+								<a href="#" class="footer-block-social-item">
+									<i class="fab fa-lg fa-instagram"></i>
+								</a>
+								<a href="#" class="footer-block-social-item">
+									<i class="fab fa-lg fa-pinterest-p"></i>
+								</a>
+							</div>
+							<!-- Block Social End -->
+						</div>
+					</div>
+					<!-- Block 1 End -->
+
+					<!-- Block 2 -->
+					<div class="footer-block">
+						<h4 class="footer-block-title">Shipping Online</h4>
+						<div class="footer-block-content">
+							<!-- Block Content Item 1 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Order Status
+								</span></a
+							>
+							<!-- Block Content Item 1 End -->
+
+							<!-- Block Content Item 2 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Shipping & Delivery
+								</span></a
+							>
+							<!-- Block Content Item 2 End -->
+
+							<!-- Block Content Item 3 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text"> Returns </span></a
+							>
+							<!-- Block Content Item 3 End -->
+
+							<!-- Block Content Item 4 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Payment Options
+								</span></a
+							>
+							<!-- Block Content Item 4 End -->
+
+							<!-- Block Content Item 5 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Contact Us
+								</span></a
+							>
+							<!-- Block Content Item 5 End -->
+						</div>
+					</div>
+					<!-- Block 2 End -->
+
+					<!-- Block 3 -->
+					<div class="footer-block">
+						<h4 class="footer-block-title">Information</h4>
+						<div class="footer-block-content">
+							<!-- Block Content Item 1 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Gift Card
+								</span></a
+							>
+							<!-- Block Content Item 1 End -->
+
+							<!-- Block Content Item 2 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Find a Store
+								</span></a
+							>
+							<!-- Block Content Item 2 End -->
+
+							<!-- Block Content Item 3 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Newsletter
+								</span></a
+							>
+							<!-- Block Content Item 3 End -->
+
+							<!-- Block Content Item 4 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Become a member
+								</span></a
+							>
+							<!-- Block Content Item 4 End -->
+
+							<!-- Block Content Item 5 -->
+							<a href="#" class="footer-block-content-item">
+								<span class="footer-block-content-item-text">
+									Site Feedback
+								</span></a
+							>
+							<!-- Block Content Item 5 End -->
+						</div>
+					</div>
+					<!-- Block 3 End -->
+
+					<!-- Block 4 -->
+					<div class="footer-block">
+						<h4 class="footer-block-title">Contact</h4>
+						<div class="footer-block-content">
+							<!-- Block Content Item 1 -->
+							<a href="#" class="footer-block-content-item">
+								<i class="fas fa-phone"></i>
+								<span class="footer-block-content-item-text">
+									+1 (123) 456-7890
+								</span>
+							</a>
+							<!-- Block Content Item 1 End -->
+							<!-- Block Content Item 2 -->
+							<a href="#" class="footer-block-content-item">
+								<i class="fas fa-envelope"></i>
+								<span class="footer-block-content-item-text">
+									m.shahzebraza.97@gmail.com
+								</span>
+							</a>
+							<!-- Block Content Item 2 End -->
+						</div>
+					</div>
+					<!-- Block 4 End -->
+				</div>
+
+				<div class="footer-banner">
+					<div class="footer-banner-content">
+						<!-- Copyrights text -->
+						<p class="footer-banner-content-text">
+							&copy; 2020 All Rights Reserved by
+							<span class="footer-banner-content-span">
+								<a href="#" class="footer-banner-content-link">
+									M. Shahzeb Razza
+								</a>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Footer End -->
+	</body>
+</html>

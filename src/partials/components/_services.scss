@@ -1,0 +1,77 @@
+@import url("../base");
+
+.services {
+	& > .container {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-title {
+	}
+
+	&-btn {
+	}
+
+	&-content {
+		@include border($pastel-blue);
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 3rem;
+	}
+
+	&-article {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+
+		&-media {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding-bottom: 0.5rem;
+
+			height: 7.5rem;
+			width: 7.5rem;
+
+			background: $primary-blue;
+			border-radius: 1rem;
+
+			position: relative;
+			z-index: 0;
+			&::before {
+				content: "";
+				z-index: 1;
+
+				width: 100%;
+				height: 100%;
+
+				position: absolute;
+				bottom: 0.5rem;
+				left: 0rem;
+
+				border-radius: 1rem;
+				background: #eee;
+			}
+		}
+		&-image {
+			z-index: 1;
+			// object-fit: cover;
+		}
+		&-info {
+		}
+		&-name {
+		}
+		&-price {
+		}
+	}
+}

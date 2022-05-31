@@ -1,0 +1,28 @@
+@import url("../base");
+.client {
+	&s {
+		// display: flex;
+		& > .container {
+			// display: flex;
+		}
+	}
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		gap: 4rem;
+	}
+	&-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		height: 15rem;
+		flex: 1;
+	}
+	&-media {
+	}
+	&-image {
+	}
+}

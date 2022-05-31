@@ -1,0 +1,17 @@
+// Create a row/container style with a width of 1200px approx. each col gutter of 30px
+// Add a background container of white color with 374px + 3 cols
+// Add variants of container-flex to container 2,3 and 4 columns
+// Add an inside-circle and after-circle class to be used for headers and btns
+// Make a blue circle mixin and use it everywhere
+// Import font awesome for the arrows
+// Capitalize hero section
+// Develop a style sheet for layout like col-1-of-4, col-2-of-4, col-3-of-4 etc.
+// container class has 3 variants, container, container-stretch, container-stretch-left, container-stretch-right
+
+// import partials scss files
+@import "partials/base";
+@import "partials/layout";
+@import "partials/components";
+@import "partials/app";
+
+// Language: scss

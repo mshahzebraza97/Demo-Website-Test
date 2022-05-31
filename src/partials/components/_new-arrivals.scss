@@ -1,0 +1,43 @@
+.new-arrivals {
+	& > .container {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+	}
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-title {
+	}
+
+	&-btn {
+	}
+
+	&-content {
+		@include border($pastel-blue);
+		display: flex;
+		justify-content: space-between;
+		gap: 3rem;
+		flex-wrap: wrap;
+	}
+
+	&-article {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		&-media {
+		}
+		&-image {
+		}
+		&-info {
+		}
+		&-name {
+		}
+		&-price {
+		}
+	}
+}
