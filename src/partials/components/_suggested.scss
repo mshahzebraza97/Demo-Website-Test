@@ -5,24 +5,20 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4rem;
-	}
-
-	&-header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-
-	&-title {
+		position: relative;
 	}
 
 	&-btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		order: 3;
 	}
 
 	&-content {
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 		gap: 3rem;
 	}
 
@@ -33,6 +29,7 @@
 		&-media {
 		}
 		&-image {
+			width: 100%;
 		}
 		&-info {
 		}
@@ -50,4 +47,29 @@
 }
 
 @media only screen and (max-width: $breakpoint-mobile) {
+	.suggested {
+		& > .container {
+			display: flex;
+			flex-direction: column;
+			gap: 4rem;
+		}
+
+		&-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&-btn {
+			position: unset;
+			order: 3;
+		}
+
+		&-content {
+			flex-direction: column;
+			display: flex;
+			justify-content: space-between;
+			gap: 3rem;
+		}
+	}
 }

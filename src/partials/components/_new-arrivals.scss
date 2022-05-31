@@ -3,6 +3,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 4rem;
+		position: relative;
 	}
 
 	&-header {
@@ -15,6 +16,9 @@
 	}
 
 	&-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
 	&-content {
@@ -43,9 +47,34 @@
 
 @media only screen and (max-width: $breakpoint-mobile) {
 	.new-arrivals {
+		&-title {
+		}
+
+		&-btn {
+			position: unset;
+			order: 3;
+		}
+
 		&-content {
 			flex-direction: column;
 			gap: 3rem;
+		}
+
+		&-article {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+			&-media {
+			}
+			&-image {
+				width: 100%;
+			}
+			&-info {
+			}
+			&-name {
+			}
+			&-price {
+			}
 		}
 	}
 }
